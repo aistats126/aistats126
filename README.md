@@ -2,21 +2,23 @@
 
 This repository contains the ```nshap``` python package to compute $n$-Shapley Values, as well as Jupyter Notebooks to replicate the results in our submission.
 
-The ```nshap``` package works with arbitrary user-defined value functions. It provides a model-agnostic implementation of the interventional SHAP value function.
+The ```nshap``` package works with arbitrary user-defined value functions. It also provides a model-agnostic implementation of the interventional SHAP value function.
 
 ⚠️ Disclaimer
 
 This implementaion is not very efficient. In practice it works for arbitrary functions of up to 10 variables.
 
-## Install
+## Setup
 
-In order to install the package go to the main folder and run
+To install the ```nshap``` package go to the main folder and run
 
 ```
 pip install . 
 ```
 
-This will also install additional packages that are required in order to replicate the paper.
+This will also install all additional packages that are required in order to replicate the paper.
+
+If you want to quickly create the figures in the paper, extract the pre-computed n-Shapley Values, contained in ```results_part1.zip``` and ```results_part2.zip```, into a single ```results/``` folder.
 
 ## Example: How to use the package to compute $n$-Shapley Values
 
@@ -110,11 +112,10 @@ We see that there are slight differences which is not surprising since we used t
 
 The folder ```notebooks\replicate-paper``` contains Jupyter Notebooks that allow to replicated the results in our submission.
 
-- The notebooks ```figures.ipynb ``` and  ```checkerboard-figures.ipynb``` can be used to generate all the figures in the paper.
+- The notebooks ```figures.ipynb``` and  ```checkerboard-figures.ipynb``` generate all the figures in the paper.
 - The notebook ```estimation.ipynb ``` provides the estimation example with the kNN classifier on the Folktables Travel data set that we discuss in Appendix Section B.
-- The notebook ```hyperparameters.ipynb ``` was used for hyperparameter choosing, which means the parameter $k$ of the kNN classifier.
-- The notebooks ```compute.ipynb ```,  ```compute-vfunc.ipynb ```, ```checkerboard-compute.ipynb ``` and ```checkerboard-compute-million.ipynb ``` were used to compute the different $n$-Shapley Values. You do not have to run these notebooks since the results are already stored in ```results/n_shapley_values```
-
+- The notebook ```hyperparameters.ipynb``` cross-validates the parameter $k$ of the kNN classifier.
+- The notebooks ```compute.ipynb```,  ```compute-vfunc.ipynb```, ```checkerboard-compute.ipynb``` and ```checkerboard-compute-million.ipynb``` compute the different $n$-Shapley Values. You do not have to run these notebooks since the results are already stored in ```results_part1.zip``` and ```results_part2.zip```. In order to use these pre-computed results, extract them into a single ```results/``` folder.
 
 ## Overview of the ```nshap``` package
 
