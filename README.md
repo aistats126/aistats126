@@ -16,7 +16,7 @@ To install the package go to the main folder and run
 pip install . 
 ```
 
-This will also install all additional packages that are required in order to replicate the paper.
+This will also install any additional packages that are required in order to replicate the paper.
 
 If you want to quickly create the figures in the paper, extract the pre-computed n-Shapley Values, contained in ```results_part1.zip``` and ```results_part2.zip```, into a single ```results/``` folder.
 
@@ -61,7 +61,7 @@ n_shapley_values[(2,3)]
 
 ``` 0.0074```
 
-To generate the plots in the paper
+To generate the plots in the paper, call
 
 ```python
 n_shapley_values.plot(feature_names = feature_names)
@@ -71,7 +71,7 @@ n_shapley_values.plot(feature_names = feature_names)
   <img src="images/img1.png" width="500" />
 </p>
 
-To compute 2-Shapley Values (via Proposition 12) and generate a plot
+and to compute 2-Shapley Values (via Proposition 12) and generate a plot, use
 
 ```python
 n_shapley_values.k_shapley_values(2).plot(feature_names = feature_names)
