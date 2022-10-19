@@ -93,7 +93,7 @@ shap.force_plot(explainer.expected_value[0], shap_values[0])
 ```
 
 <p align="left">
-  <img src="images/img3.png" width="700" />
+  <img src="images/img3.png" width="800" />
 </p>
 
 and then generate the same plot for the Shapley Values that we just computed with the ```nshap``` package.
@@ -103,7 +103,7 @@ shap.force_plot(vfunc(X_test[0,:], []), n_shapley_values.shapley_values())
 ```
 
 <p align="left">
-  <img src="images/img4.png" width="770" />
+  <img src="images/img4.png" width="880" />
 </p>
 
 There are slight differences which is not surprising since we used two very different methods to compute the Shapley Values.
