@@ -81,7 +81,7 @@ n_shapley_values.k_shapley_values(2).plot(feature_names = feature_names)
   <img src="images/img2.png" width="500" />
 </p>
 
-We can also compare these results with the Shapley Values retunred by the [shap](https://github.com/slundberg/shap/) package.
+We can also compare these results with the Shapley Values returned by the [shap](https://github.com/slundberg/shap/) package.
 
 For this, we approximate the Shapley Values with Kernel SHAP
 
