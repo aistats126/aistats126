@@ -1,4 +1,4 @@
-# This is the anonymous code repository for the AISTATS Submission "From Shapley Values to Generalized Additive Models and back"
+# This is the Anonymous Code Repository for the AISTATS Submission "From Shapley Values to Generalized Additive Models and back"
 
 This repository contains the ```nshap``` python package to compute $n$-Shapley Values, as well as Jupyter Notebooks to replicate the results in our submission.
 
