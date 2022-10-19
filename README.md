@@ -10,7 +10,7 @@ This implementaion is not very efficient. In practice it works for arbitrary fun
 
 ## Setup
 
-To install the ```nshap``` package go to the main folder and run
+To install the package go to the main folder and run
 
 ```
 pip install . 
