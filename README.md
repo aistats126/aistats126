@@ -6,7 +6,7 @@ The ```nshap``` package works with arbitrary user-defined value functions. It al
 
 ⚠️ Disclaimer
 
-This implementation is not very efficient. In practice it works for arbitrary functions of up to 10 variables.
+This implementation is not very efficient. In practice it works for functions of up to ~10 variables.
 
 ## Setup
 
