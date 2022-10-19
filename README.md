@@ -93,7 +93,7 @@ shap.force_plot(explainer.expected_value[0], shap_values[0])
 ```
 
 <p align="left">
-  <img src="images/img3.png" width="770" />
+  <img src="images/img3.png" width="750" />
 </p>
 
 and then generate the same plot for the Shapley Values that we just computed with the ```nshap``` package.
