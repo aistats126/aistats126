@@ -81,9 +81,9 @@ n_shapley_values.k_shapley_values(2).plot(feature_names = feature_names)
   <img src="images/img2.png" width="500" />
 </p>
 
-We can also compare our result with the Shapley Values obtained from the [shap](https://github.com/slundberg/shap/) package.
+We can also compare these results with the Shapley Values obtained from the [shap](https://github.com/slundberg/shap/) package.
 
-For this, we approximate the Shapley Values with Kernel SHAP. 
+For this, we approximate the Shapley Values with Kernel SHAP
 
 ```python
 import shap
@@ -96,7 +96,7 @@ shap.force_plot(explainer.expected_value[0], shap_values[0])
   <img src="images/img3.png" width="800" />
 </p>
 
-And then generate the same plot for the Shapley Values just computed with the ```nshap``` package.
+and then generate the same plot for the Shapley Values that we just computed with the ```nshap``` package.
 
 ```python
 shap.force_plot(vfunc(X_test[0,:], []), n_shapley_values.shapley_values())
@@ -106,7 +106,7 @@ shap.force_plot(vfunc(X_test[0,:], []), n_shapley_values.shapley_values())
   <img src="images/img4.png" width="888" />
 </p>
 
-We see that there are slight differences which is not surprising since we used two very different methods to estimate the Shapley Values.
+There are slight differences which is not surprising since we used two very different methods to estimate the Shapley Values.
 
 ## How to replicate the results in the paper
 
