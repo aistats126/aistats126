@@ -1,8 +1,10 @@
 # This is the Anonymous Code Repository for the AISTATS Submission "From Shapley Values to Generalized Additive Models and back"
 
-This repository contains the ```nshap``` python package to compute $n$-Shapley Values, as well as Jupyter Notebooks to replicate the results in our submission.
+This repository contains a python package to compute $n$-Shapley Values, as well as Jupyter Notebooks to replicate the results in our submission.
 
-The ```nshap``` package works with arbitrary user-defined value functions. It also provides a model-agnostic implementation of the interventional SHAP value function.
+The package is called ```nshap``` and works with arbitrary user-defined value functions. It also provides a model-agnostic implementation of the interventional SHAP value function.
+
+The code was tested with Python 3.9 on MacOS and Linux.
 
 ⚠️ Disclaimer
 
