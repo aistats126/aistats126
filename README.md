@@ -22,7 +22,7 @@ If you want to quickly create the figures in the paper, extract the pre-computed
 
 ## Example: How to use the package to compute $n$-Shapley Values
 
-Let's assume that we have trained a Gradient Boosted Tree on the [Folktables](https://github.com/zykls/folktables) Income data set.
+Let's assume that we have trained a Gradient Boosted Tree on the [Folktables](https://github.com/zykls/folktables) Income data set (the code for this example can be found in ```notebooks/Example.ipynb``` ).
 
 ```python
 gbtree = xgboost.XGBClassifier()
@@ -110,7 +110,9 @@ There are slight differences which is not surprising since we used two very diff
 
 ## How to replicate the results in the paper
 
-The folder ```notebooks\replicate-paper``` contains Jupyter Notebooks that allow to replicated the results in our submission.
+The folder ```notebooks\replicate-paper``` contains Jupyter Notebooks that replicated the results in our submission. A good start is probably ```figures.ipynb```. To run this notebook you don't have to compute any n-Shapley Values - simply unzip the pre-computed values in ```results_part1.zip``` and ```results_part2.zip```
+
+In total, there are the following notebooks:
 
 - The notebooks ```figures.ipynb``` and  ```checkerboard-figures.ipynb``` generate all the figures in the paper.
 - The notebook ```estimation.ipynb ``` provides the estimation example with the kNN classifier on the Folktables Travel data set that we discuss in Appendix Section B.
