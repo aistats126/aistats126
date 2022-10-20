@@ -14,7 +14,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    packages=["nshap"],
     python_requires=">=3.6",
     install_requires=[
         "numpy",
@@ -26,5 +26,6 @@ setuptools.setup(
         "interpret",
         "pandas",
         "shap",
+        "jupyterlab",
     ],
 )
